@@ -38,11 +38,12 @@ function Hero() {
           View My Work
         </a>
         <a
-          href="/SiddharthBhardwajResume.pdf"
-          download
-          className="px-6 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+        href="/SiddharthBhardwajResume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-6 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow hover:bg-gray-300 dark:hover:bg-gray-700 transition"
         >
-          📄 Download Resume
+        📄 View Resume
         </a>
       </motion.div>
     </section>
