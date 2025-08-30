@@ -5,35 +5,46 @@ function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-b from-indigo-600 to-indigo-800 text-white text-center px-4"
+      className="pt-24 min-h-screen flex flex-col justify-center items-center bg-white dark:bg-gray-900 text-center"
     >
-      <motion.h2
-        className="text-5xl md:text-6xl font-bold mb-4"
-        initial={{ opacity: 0, y: -50 }}
+      <motion.h1
+        className="text-5xl md:text-6xl font-bold mb-6 text-indigo-600 dark:text-indigo-400"
+        initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        Hello, I’m <span className="text-yellow-300">Siddharth Bhardwaj</span>
-      </motion.h2>
-
+        Hi, I'm Siddharth Bhardwaj
+      </motion.h1>
       <motion.p
-        className="text-xl md:text-2xl mb-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
+        className="text-lg md:text-xl mb-8 text-gray-700 dark:text-gray-300 max-w-2xl"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
       >
-        A passionate Software Developer 🚀
+        Software Developer passionate about building modern apps, solving
+        real-world problems, and crafting smooth user experiences.
       </motion.p>
 
-      <motion.a
-        href="#projects"
-        className="bg-yellow-400 text-indigo-900 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-yellow-300 transition duration-300"
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1, duration: 0.5 }}
+      <motion.div
+        className="flex flex-col sm:flex-row gap-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
       >
-        View My Work
-      </motion.a>
+        <a
+          href="#projects"
+          className="px-6 py-3 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
+        >
+          View My Work
+        </a>
+        <a
+          href="/SiddharthBhardwajResume.pdf"
+          download
+          className="px-6 py-3 bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded-lg shadow hover:bg-gray-300 dark:hover:bg-gray-700 transition"
+        >
+          📄 Download Resume
+        </a>
+      </motion.div>
     </section>
   );
 }

@@ -1,12 +1,27 @@
 const skills = [
+  // Languages
   "JavaScript",
-  "React",
-  "Node.js",
   "Python",
+  "Dart",
+
+  // Frameworks
+  "React.js",
+  "Node.js",
+  "Express.js",
   "Django",
+  "Flutter",
+
+  // Tools
+  "Docker",
+  "Git",
+  "PostgreSQL",
+  "MongoDB",
+  "JWT",
+  "Celery",
   "TailwindCSS",
-  "C++",
-  "SQL",
+  "Google Cloud (GCP)",
+  "Firebase",
+  "Pub/Sub",
 ];
 
 export default skills;
